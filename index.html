@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/assets/css/site.css" rel="stylesheet">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-md-center">
+            <div class="col-5">
+                <form id="myForm" onsubmit="signUp(); return false">
+                    <div id="mainDiv" class="row g-3">
+                        <h1 class="display-6 text-center">Sign up</h1>
+                        <p class=" lead text-center">Fill out the form to complete your registration</p>
+                        <div class="col-sm-6">
+                            <label class="form-label" for="firstName">First Name</label>
+                            <input class="form-control" type="text" id="firstName" placeholder="Jane" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label" for="lastName">Last Name</label>
+                            <input class="form-control" type="text" id="lastName" placeholder="Doe" required>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="birthday">Birthday</label>
+                            <input class="form-control" type="date" id="birthday" required>
+                        </div>
+                        <div class="col-sm-8">
+                            <label class="form-label" for="email">Email address</label>
+                            <input class="form-control" type="email" id="email" placeholder="jane@doe.com" required>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password"
+                                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                            <span id="passwordHelpInline" class="form-text">
+                                Must be 8-20 characters long.
+                            </span>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="passwordConfirm">Confirm password</label>
+                            <input class="form-control" type="password" id="passwordConfirm"
+                                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                            <span id="message" class="form-text">
+
+                            </span>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="phonenumber">Telephone</label>
+                            <input class="form-control" type="tel" id="phonenumber" placeholder="(+351) 999 999 999"
+                            minlength="9" maxlength="9" required>
+                            <span id="passwordHelpInline" class="form-text">
+                                Must be in a valid format.
+                            </span>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/site.js"></script>
+</body>
+
+</html>
